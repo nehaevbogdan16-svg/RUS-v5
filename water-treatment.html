@@ -195,7 +195,16 @@
             <a href="https://nehaevbogdan16-svg.github.io/Aura.IT/">Сделано Aura IT</a>
         </span>
     </footer>
+<script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
 
+    setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }, 4000);
+</script>м
     <script src="script.js"></script>
 </body>
 </html>
